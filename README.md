@@ -22,7 +22,9 @@ I then opened two terminal windows and connected to the two EC2 instances via ss
 
 I then opened a script file named "install.sh" on both systems using the vi command and pasted the provided script inside both files. 
 
-After that I changed the permissions on the script files so as to make them executeable and then run the script files making sure to input the respective public IPs as specified in the scripts
+The purpose of the script files being to automatically update my system and install apache webservers and check the status to check/confirm that they are running/active
+
+After that I changed the permissions on the script files so as to make them executeable and then ran the script files making sure to input the respective public IPs as specified in the scripts
 
 I then ran both public IPs on my web browser to verify that the scripts ran as intended
 
@@ -61,3 +63,25 @@ I then opened a new terminal window and connected to the EC2 instance via ssh af
 ![Screenshot 2023-11-06 215525](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/661cc6b4-e1fd-4371-b64b-20deb97e6122)
 
 ![Screenshot 2023-11-06 215622](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/db1f14d3-3223-46d2-8c4c-ee448d72011b)
+
+I then opened a script file named "nginx.sh" on this system using the vi command and pasted the provided script inside the file.
+
+The purpose of this script file being to automatically configure nginx as a load balancer for the previous two apache webservers created and test that in was configured properly
+
+After that I changed the permission on the script file so as to make it executeable and then ran the script file making sure to input the respective public IPs as specified in the scripts
+
+I then moved to my web browser to test using the nginx public IP and refreshing to verify that it was switching between both apache web servers
+
+![Screenshot 2023-11-06 215742](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/fcfaf6a5-bc0c-40b8-b379-19d8f1fdbd73)
+
+![Screenshot 2023-11-06 215846](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/6857baa8-118b-4a9a-8ad3-ffbe5e34b326)
+
+![Screenshot 2023-11-06 215931](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/de17ba23-e5b4-418f-b5bf-e784d294775b)
+
+![Screenshot 2023-11-06 220144](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/b4f07191-cf4c-44b3-a571-4595fc97e73e)
+
+![Screenshot 2023-11-06 220230](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/44d08c52-ade3-46fc-a22a-d56d3ff52b96)
+
+![Screenshot 2023-11-06 220532](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/3524e3ec-6a97-4871-8f85-551888a7d9ee)
+
+![Screenshot 2023-11-06 220553](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/a0dfdcdf-baa5-4e9a-8623-9200f4caa98a)
