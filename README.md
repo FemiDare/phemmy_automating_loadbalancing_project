@@ -22,7 +22,7 @@ I then opened two terminal windows and connected to the two EC2 instances via ss
 
 I then opened a script file named "install.sh" on both systems using the vi command and pasted the provided script inside both files. 
 
-The purpose of the script files being to automatically update my system and install apache webservers and check the status to check/confirm that they are running/active
+The purpose of the script files being to automatically update my system and install apache webservers and check the status to check/confirm that they are running/active and restart the apache web servers
 
 After that I changed the permissions on the script files so as to make them executeable and then ran the script files making sure to input the respective public IPs as specified in the scripts
 
@@ -66,7 +66,7 @@ I then opened a new terminal window and connected to the EC2 instance via ssh af
 
 I then opened a script file named "nginx.sh" on this system using the vi command and pasted the provided script inside the file.
 
-The purpose of this script file being to automatically configure nginx as a load balancer for the previous two apache webservers created and test that in was configured properly
+The purpose of this script file being to automatically configure nginx as a load balancer for the previous two apache webservers created and test that in was configured properly and then restart the nginx server
 
 After that I changed the permission on the script file so as to make it executeable and then ran the script file making sure to input the respective public IPs as specified in the scripts
 
