@@ -50,3 +50,14 @@ I then ran both public IPs on my web browser to verify that the scripts ran as i
 
 ![Screenshot 2023-11-06 214319](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/5e517213-edcf-41f3-a424-242dd78ce113)
 
+I then launched a new EC2 instance named "nginx loadbal" and made sure to open port 80 by adding a new inbound rule so as to serve content through that port
+
+I then opened a new terminal window and connected to the EC2 instance via ssh after which I changed the hostname to "nginxbalancer" and then updated the system
+
+![Screenshot 2023-11-06 215028](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/be2d09b5-4706-493c-94fe-45ea21eaa9d8)
+
+![Screenshot 2023-11-06 220454](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/b75a4e43-5593-4a02-973f-0259c66ea813)
+
+![Screenshot 2023-11-06 215525](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/661cc6b4-e1fd-4371-b64b-20deb97e6122)
+
+![Screenshot 2023-11-06 215622](https://github.com/FemiDare/phemmy_automating_loadbalancing_project/assets/140294606/db1f14d3-3223-46d2-8c4c-ee448d72011b)
